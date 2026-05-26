@@ -38,6 +38,9 @@ out/
 
 node_modules
 
+### JAVA ###
+OpenJDK-23/
+OpenJDK-26/
 
 ### AI ###
 .bmad-core/*
