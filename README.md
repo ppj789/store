@@ -70,3 +70,35 @@ Think carefully about the impact on performance when implementing your changes
 The specifications of the tasks have been left deliberately vague. You will be required to exercise judgement about what to deliver - in a real world environment, you would clarify these points in refinement, but since this is a project to be completed without interaction, feel free to make assumptions - but be prepared to defend them when asked.
 There's no CI pipeline associated with this project, but in reality there would be. Consider the things that you would expect that pipeline to verify before allowing your code to be promoted
 Feel free to refactor the codebase if necessary. Bad choices were deliberately made when creating this project.
+
+
+
+## Jason's Corner
+I want to be upfront about my AI usage during this technical project.
+
+I do not typically rely heavily on AI in my day-to-day development work, so I outside of my job I try to maintain at least compentency in it. That said, I saw this assignment as a good opportunity to learn more about modern AI-assisted workflows and apply them in a practical environment. 
+
+During the initial interview, I asked permission regarding AI usage, and I wanted to clearly acknowledge where it has been used in this project.
+I also tried to keep the tooling and models local where possible, so that everything used during development remained on my own machine rather than relying on external hosted services.
+
+For this assignment, I experimented with running Ollama locally together with Roo Code using Qwen 3.6. One of the reasons I chose Roo Code was to explore the BMAD workflow, which was something new to me and part of the learning experience I wanted to gain from this project.
+
+My goal with using these tools was not to replace understanding or ownership of the work, but rather to explore how AI can assist with development workflows while still ensuring I understand and can explain the implementation decisions being made.
+
+Hopefully this assignment provides value on both sides. For me, it has been a chance to learn more about AI-assisted development, and for you, perhaps there is something useful or interesting to take away from the approach as well.
+
+
+## References
+BMAD Method
+https://github.com/bmad-code-org/bmad-method
+
+Ollama
+https://ollama.com/
+
+Roo Code
+https://github.com/RooCodeInc/Roo-Code
+
+
+
+
+
