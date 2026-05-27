@@ -33,15 +33,17 @@ public class CustomerController {
 
     @GetMapping("/{id}")
     public CustomerDTO getCustomerById(@PathVariable Long id) {
-        Customer customer = customerRepository.findById(id)
-            .orElseThrow(() -> new RuntimeException("Customer not found with id: " + id));
+        Customer customer = customerRepository
+                .findById(id)
+                .orElseThrow(() -> new RuntimeException("Customer not found with id: " + id));
         return customerMapper.customerToCustomerDTO(customer);
     }
 
     @PutMapping("/{id}")
     public CustomerDTO updateCustomer(@PathVariable Long id, @RequestBody Customer customer) {
-        Customer existingCustomer = customerRepository.findById(id)
-            .orElseThrow(() -> new RuntimeException("Customer not found with id: " + id));
+        Customer existingCustomer = customerRepository
+                .findById(id)
+                .orElseThrow(() -> new RuntimeException("Customer not found with id: " + id));
         existingCustomer.setName(customer.getName());
         return customerMapper.customerToCustomerDTO(customerRepository.save(existingCustomer));
     }
@@ -49,8 +51,9 @@ public class CustomerController {
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteCustomer(@PathVariable Long id) {
-        Customer customer = customerRepository.findById(id)
-            .orElseThrow(() -> new RuntimeException("Customer not found with id: " + id));
+        Customer customer = customerRepository
+                .findById(id)
+                .orElseThrow(() -> new RuntimeException("Customer not found with id: " + id));
         customerRepository.delete(customer);
     }
 }

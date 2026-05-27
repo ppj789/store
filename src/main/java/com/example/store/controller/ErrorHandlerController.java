@@ -1,9 +1,11 @@
 package com.example.store.controller;
 
-import org.springframework.boot.web.servlet.error.ErrorController;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.stereotype.Controller;
 import jakarta.servlet.http.HttpServletRequest;
+
+import org.springframework.boot.web.servlet.error.ErrorController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
 import java.util.HashMap;
 import java.util.Map;
 
