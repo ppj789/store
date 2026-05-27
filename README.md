@@ -99,6 +99,24 @@ Roo Code
 https://github.com/RooCodeInc/Roo-Code
 
 
+## Running the project (Docker)
+
+Start all services:
+
+```bash
+docker compose up -d
+
+To rebuild from scratch:
+
+docker compose up -d --build
+
+Once running, access:
+
+Swagger UI:
+http://localhost:8080/swagger-ui/index.html
+OpenAPI spec:
+http://localhost:8080/v3/api-docs
+
 
 
 

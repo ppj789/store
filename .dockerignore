@@ -1,0 +1,51 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+*.iml
+.vscode
+.settings
+.project
+.classpath
+.factorypath
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+out/
+target/
+
+# Gradle
+.gradle
+gradle-app.setting
+!gradle-wrapper.jar
+!**/gradle-wrapper.jar
+
+# Logs
+*.log
+logs/
+
+# Temp files
+*.tmp
+*.swp
+*~
+
+# Docker
+docker-compose*.yaml
+Dockerfile
+.dockerignore
+
+# Plans
+plans/
+
+# Utils
+utils/
+
+# License and docs
+LICENSE
+README.md

@@ -1,6 +1,10 @@
+# Docker profile configuration
+# Activated when SPRING_PROFILES_ACTIVE=docker
+# Overrides datasource to use Docker service name for connection
+
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/store
+    url: jdbc:postgresql://db:5432/store
     username: admin
     password: admin
   jpa:
@@ -13,7 +17,7 @@ spring:
         default_batch_fetch_size: 10
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.yaml
-  
+
 management:
   endpoints:
     web:
