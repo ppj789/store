@@ -25,7 +25,6 @@ spotless {
         palantirJavaFormat('2.50.0')
                 .style('PALANTIR')
                 .formatJavadoc(true)
-        importOrder('com', 'jakarta', 'lombok', 'org', '', 'javax|java', '\\#')
         removeUnusedImports()
         formatAnnotations()
     }
